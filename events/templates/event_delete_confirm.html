@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>Delete evento confirmação</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <p>Voce tem certeza que deseja deletar o evento {{ object.event_name }}?</p>
+        <button type="submit">Tenho certeza</button>
+    </form>
+</body>
+</html>
